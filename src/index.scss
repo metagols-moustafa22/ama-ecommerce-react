@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@font-face {
+  font-family: "HSIshraqRegular";
+  src: url(../public/assets/fonts/HSIshraqLight.otf);
+}
+
+* {
+  font-weight: 400;
+  color: #777777;
+}
+
+*:lang(ar) {
+  font-family: "HSIshraqRegular" !important;
+}

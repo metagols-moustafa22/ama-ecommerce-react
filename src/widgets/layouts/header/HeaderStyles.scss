@@ -1,0 +1,26 @@
+#main-header {
+  width: 100%px;
+  height: 150px;
+  background: #a9d6a2;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 136px;
+    height: 100%;
+    padding-left: 96px;
+    align-items: center;
+  }
+
+  .nav-top-most {
+    display: flex;
+    font-size: 16px;
+  }
+  .all-nav-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link {
+    color: #777777;
+  }
+}

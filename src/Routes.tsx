@@ -1,10 +1,4 @@
-import {
-  Routes,
-  Route,
-  BrowserRouter,
-  Navigate,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate, useLocation } from "react-router-dom";
 import { AppLayout } from "./widgets/layouts/AppLayout";
 
 export const Navigation = () => {
