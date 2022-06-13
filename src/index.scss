@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
 @font-face {
   font-family: "HSIshraqRegular";
   src: url(../public/assets/fonts/HSIshraqLight.otf);
@@ -11,4 +12,9 @@
 
 *:lang(ar) {
   font-family: "HSIshraqRegular" !important;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1440px !important;
+  }
 }
