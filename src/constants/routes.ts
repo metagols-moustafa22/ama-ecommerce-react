@@ -1,1 +1,3 @@
-export const keyRoutes = {};
+export const keyRoutes = {
+  index: "/",
+};

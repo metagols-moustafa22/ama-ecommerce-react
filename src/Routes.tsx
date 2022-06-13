@@ -11,7 +11,7 @@ export const Navigation = () => {
   return (
     <Routes>
       <Route element={<AppLayout />}>
-        <Route index element={<div>asdasd</div>}></Route>
+        <Route index element={<div>Home Page</div>}></Route>
       </Route>
     </Routes>
   );
