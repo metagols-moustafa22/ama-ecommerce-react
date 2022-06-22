@@ -5,12 +5,20 @@ import "./NewsCarouselStyles.scss";
 export const NewsCarousel: React.FC = () => {
   function NextArrow(props: any) {
     const { className, style, onClick } = props;
-    return <button className="carousel-btn next-btn" onClick={onClick}></button>;
+    return (
+      <button className="carousel-btn next-btn" onClick={onClick}>
+        &#62;
+      </button>
+    );
   }
 
   function PrevArrow(props: any) {
     const { className, style, onClick } = props;
-    return <button className="carousel-btn prev-btn" onClick={onClick}></button>;
+    return (
+      <button className="carousel-btn prev-btn" onClick={onClick}>
+        &#60;
+      </button>
+    );
   }
 
   const settings = {
@@ -28,17 +36,17 @@ export const NewsCarousel: React.FC = () => {
       <Slider {...settings}>
         <div>
           <div className="rest">
-            <img src="/assets/images/Image.png" alt="" />
+            <img src="/assets/images/contain.png" alt="" />
           </div>
         </div>
         <div>
           <div className="rest">
-            <img src="/assets/images/Image.png" alt="" />
+            <img src="/assets/images/contain.png" alt="" />
           </div>
         </div>
         <div>
           <div className="rest">
-            <img src="/assets/images/Image.png" alt="" />
+            <img src="/assets/images/contain.png" alt="" />
           </div>
         </div>
       </Slider>

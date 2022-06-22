@@ -1,0 +1,63 @@
+.SingleCarousel {
+  .card {
+    width: 100%;
+    max-width: 860px;
+    height: 367px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+  .card-contents {
+    padding: 48px;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .status,
+  .productname {
+    color: #ffffff;
+  }
+  .productname {
+    text-transform: uppercase;
+  }
+  position: relative;
+  .carousel-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+  }
+  .next-btn {
+    top: 15px;
+    right: 30px;
+  }
+  .prev-btn {
+    top: 15px;
+    right: 65px;
+  }
+  .slick-slider {
+    height: 367px;
+    width: 100%;
+    max-width: 860px;
+    margin-bottom: 1.5rem;
+  }
+  .slick-dots li button:before {
+    color: #ffffff;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 365px;
+  }
+}

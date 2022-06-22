@@ -1,3 +1,47 @@
 #Home {
-  margin-top: 31px;
+  margin-top: 24px;
+  .test {
+    width: 270px;
+    height: 564px;
+    border-radius: 8px;
+    background-color: red;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .test2 {
+    width: 858px;
+    height: 367px;
+    border-radius: 8px;
+    background-color: red;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .test3 {
+    width: 194px;
+    height: 172px;
+    border-radius: 8px;
+    background-color: red;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .test4 {
+    width: 270px;
+    height: 172px;
+    border-radius: 8px;
+    background-color: red;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

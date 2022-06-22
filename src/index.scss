@@ -1,18 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
 
-@font-face {
-  font-family: "HSIshraqRegular";
-  src: url(../public/assets/fonts/HSIshraqLight.otf);
+$color-primary: #555555;
+$color-secondary: #2f8a33;
+
+$theme-colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+);
+
+@function theme-colors($key) {
+  @return map-get($theme-colors, $key);
 }
 
 * {
-  font-weight: 400;
-  color: #777777;
+  font-family: "Work Sans";
+}
+// ==========================================
+// Font size
+// ==========================================
+
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-34 {
+  font-size: 34px;
+}
+// ==========================================
+// Buttons
+// ==========================================
+
+.btn.btn-light {
+  height: 40px;
+  background: #ffffff;
+  border-radius: 8px;
+  color: $color-secondary;
+}
+.btn.btn-success {
+  background: #2f8a33;
+  border-radius: 8px;
+}
+.btn.btn-link {
+  outline: none !important;
+}
+.btn:focus {
+  box-shadow: none;
 }
 
-*:lang(ar) {
-  font-family: "HSIshraqRegular" !important;
+// ==========================================
+// Drop downs
+// ==========================================
+.dropdown-toggle.btn.btn-secondary {
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: none;
 }
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1440px !important;

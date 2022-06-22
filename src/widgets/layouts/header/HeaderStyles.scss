@@ -1,113 +1,215 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "/src/index.scss";
 
 #main-header {
-  width: 100%px;
-  height: 150px;
-  background: #a9d6a2;
+  height: 168px;
+  background: linear-gradient(180deg, rgba(188, 249, 178, 0.8) 0%, rgba(169, 214, 162, 0.8) 100%);
+  box-shadow: inset 0px 20px 60px 5px rgba(169, 214, 162, 0.25);
+  background-image: url("../../../../public/assets/images/header_image.svg");
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 136px;
-    height: 100%;
-    padding-left: 96px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+  .header-btn-light {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
   }
-  .navbar-brand {
+  .header-top {
     display: flex;
-    align-items: center;
-  }
-  .nav-top-most {
-    display: flex;
-    font-size: 16px;
-  }
-  .nav-middle {
-    display: flex;
-    gap: 20px;
-    padding-top: 15px;
-  }
-  .all-nav-items {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    justify-content: center;
     width: 100%;
+    gap: 5px;
+    padding-top: 22px;
   }
   .nav-link {
-    color: #777777;
+    padding: 0px;
   }
-  .cart-wrapper {
+  .dot {
+    color: theme-colors("secondary");
+  }
+
+  .search-wrapper {
+    width: 100%;
+    padding-top: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-  }
-  .counters {
-    width: 18px;
-    height: 18px;
-    background: #d2edcd;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins" !important;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    color: #000000;
-  }
-  .search-bar,
-  .search-input {
-    width: 100%;
-    height: 42px;
-    max-width: 1090px;
-    border: none;
-    outline: none;
-    padding-right: 10px;
-    font-size: 20px;
-  }
-  .search-btn,
-  .search-all-btn {
-    width: 50px;
-    height: 42px;
-    border: none;
-  }
-  .search-btn {
-    background: #2f8a33;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-  .search-all-btn {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background: #f5f5f5;
-    font-size: 14px;
-    color: #000000;
+    gap: 8px;
+    .search-input-wrapper {
+      width: 100%;
+      max-width: 580px;
+      position: relative;
+    }
+    .search-input {
+      width: 100%;
+      height: 48px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      padding-left: 16px;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: theme-colors("secondary");
+      }
+    }
+    .search-category-dropdown {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .search-category-dropdown > button {
+      width: 196px;
+      height: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: theme-colors("primary");
+    }
   }
 
-  .auth-btns > a {
-    padding: 0px;
-    padding-right: 1em;
-    font-size: 17px;
-  }
-  .items {
-    font-size: 13px;
+  .btn-search {
+    height: 48px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   }
 }
-.recently-seen-bar {
-  height: 50px;
-  width: 100%;
-  background: #ffffff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-  padding-right: 150px;
+
+.navbar {
+  padding: 0px;
+  height: 100%;
+}
+.language-select {
+  width: 121px;
+  padding-top: 22px;
+}
+.carting-btns-wrapper {
+  padding-top: 26px;
+}
+.css-1s2u09g-control {
+  background: transparent;
+  // width: 121px;
+}
+.css-319lph-ValueContainer {
+  background: transparent;
+}
+
+.navbar-brand {
   display: flex;
   align-items: center;
-  gap: 45px;
-  .recently-seen {
-    font-size: 20px;
-  }
+  height: 100%;
+  justify-content: end;
 }
-.vl {
-  width: 1px;
-  height: 26px;
-  background: rgba(119, 119, 119, 0.5);
-}
+
+// #main-header {
+//   width: 100%px;
+//   height: 150px;
+//   background: #a9d6a2;
+
+//   .navbar {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-right: 136px;
+//     height: 100%;
+//     padding-left: 96px;
+//     padding-top: 0px;
+//     padding-bottom: 0px;
+//   }
+//   .navbar-brand {
+//     display: flex;
+//     align-items: center;
+//   }
+//   .nav-top-most {
+//     display: flex;
+//     font-size: 16px;
+//   }
+//   .nav-middle {
+//     display: flex;
+//     gap: 20px;
+//     padding-top: 15px;
+//   }
+//   .all-nav-items {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+//     width: 100%;
+//   }
+//   .nav-link {
+//     color: #777777;
+//   }
+//   .cart-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 5px;
+//   }
+//   .counters {
+//     width: 18px;
+//     height: 18px;
+//     background: #d2edcd;
+//     border-radius: 3px;
+//     display: flex;
+//     justify-content: center;
+//     font-family: "Poppins" !important;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 13px;
+//     color: #000000;
+//   }
+//   .search-bar,
+//   .search-input {
+//     width: 100%;
+//     height: 42px;
+//     max-width: 1090px;
+//     border: none;
+//     outline: none;
+//     padding-right: 10px;
+//     font-size: 20px;
+//   }
+//   .search-btn,
+//   .search-all-btn {
+//     width: 50px;
+//     height: 42px;
+//     border: none;
+//   }
+//   .search-btn {
+//     background: #2f8a33;
+//     border-top-right-radius: 3px;
+//     border-bottom-right-radius: 3px;
+//   }
+//   .search-all-btn {
+//     border-top-left-radius: 3px;
+//     border-bottom-left-radius: 3px;
+//     background: #f5f5f5;
+//     font-size: 14px;
+//     color: #000000;
+//   }
+
+//   .auth-btns > a {
+//     padding: 0px;
+//     padding-right: 1em;
+//     font-size: 17px;
+//   }
+//   .items {
+//     font-size: 13px;
+//   }
+// }
+// .recently-seen-bar {
+//   height: 50px;
+//   width: 100%;
+//   background: #ffffff;
+//   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+//   padding-right: 150px;
+//   display: flex;
+//   align-items: center;
+//   gap: 45px;
+//   .recently-seen {
+//     font-size: 20px;
+//   }
+// }
+// .vl {
+//   width: 1px;
+//   height: 26px;
+//   background: rgba(119, 119, 119, 0.5);
+// }

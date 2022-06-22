@@ -1,0 +1,45 @@
+@import "/src/index.scss";
+#SubHeader {
+  height: 56px;
+  //   background-color: rgb(240, 218, 218);
+  .new-product-btn > button {
+    width: 145px;
+  }
+  .category-btn > button {
+    width: 189px;
+  }
+  .new-product-btn > button,
+  .category-btn > button {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: theme-colors("primary");
+  }
+  .new-product-btn > button::after,
+  .category-btn > button::after {
+    content: "\2304" !important;
+    font-size: 20px;
+    margin: 0px !important;
+    padding-bottom: 10px;
+    border: none !important;
+    color: #858585;
+  }
+  .sub-header-contents {
+    a {
+      text-decoration: none;
+      color: theme-colors("primary");
+    }
+  }
+  .hot {
+    width: 41px;
+    height: 24px;
+    background: #2f8a33;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+  }
+}
