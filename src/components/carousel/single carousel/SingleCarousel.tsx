@@ -2,15 +2,18 @@ import React from "react";
 import Slider from "react-slick";
 import "./SingleCarouselStyles.scss";
 import { Button } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+import { enKey } from "../../../utils/languages/en";
 
 export const SingleCarousel: React.FC = () => {
+  const { t } = useTranslation();
   const carouselData = [
-    { images: "/assets/images/watch.webp", status: "New Product", productname: "HAND WATCH HUBLOT", key: "1" },
-    { images: "/assets/images/watch.webp", status: "New Product", productname: "HAND WATCH HUBLOT", key: "2" },
-    { images: "/assets/images/watch.webp", status: "New Product", productname: "HAND WATCH HUBLOT", key: "3" },
-    { images: "/assets/images/watch.webp", status: "New Product", productname: "HAND WATCH HUBLOT", key: "4" },
-    { images: "/assets/images/watch.webp", status: "New Product", productname: "HAND WATCH HUBLOT", key: "5" },
-    { images: "/assets/images/watch.webp", status: "New Product", productname: "HAND WATCH HUBLOT", key: "6" },
+    { images: "/assets/images/watch.png", status: "منتج جديد", productname: "ساعة اليد HUBLOT", key: "1" },
+    { images: "/assets/images/watch.png", status: "منتج جديد", productname: "ساعة اليد HUBLOT", key: "1" },
+    { images: "/assets/images/watch.png", status: "منتج جديد", productname: "ساعة اليد HUBLOT", key: "1" },
+    { images: "/assets/images/watch.png", status: "منتج جديد", productname: "ساعة اليد HUBLOT", key: "1" },
+    { images: "/assets/images/watch.png", status: "منتج جديد", productname: "ساعة اليد HUBLOT", key: "1" },
+    { images: "/assets/images/watch.png", status: "منتج جديد", productname: "ساعة اليد HUBLOT", key: "1" },
   ];
 
   function NextArrow(props: any) {
@@ -49,12 +52,12 @@ export const SingleCarousel: React.FC = () => {
       <Slider {...settings}>
         {carouselData.map((el, idx) => (
           <div className="card">
-            <img src="/assets/images/watch.webp" alt="" />
+            <img src={el.images} alt="" />
             <div className="card-contents">
               <span className="fs-16 status">{el.status}</span>
               <span className="fs-34 productname">{el.productname}</span>
               <Button key={el.key} variant="success">
-                Buy Now
+                {t(enKey.btn_buy_now)}
               </Button>
             </div>
           </div>

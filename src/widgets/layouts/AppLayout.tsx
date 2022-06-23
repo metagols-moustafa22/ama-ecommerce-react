@@ -8,10 +8,9 @@ export const AppLayout = () => {
     <>
       <Header />
       <SubHeaderPage />
-      <Container>
-        <Outlet />
-      </Container>
-      {/* <FooterPage /> */}
+      {/* <Container> */}
+      <Outlet />
+      {/* </Container> */}
     </>
   );
 };

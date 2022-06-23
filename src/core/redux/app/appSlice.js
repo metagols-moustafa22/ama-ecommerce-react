@@ -2,8 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import { changeLanguage as changeLanguageI18n } from "i18next";
 
 const initialState = {
-  language: "en",
-  dir: "ltr",
+  language: "ar",
+  // dir: "ltr",
+  dir: "rtl",
   user: {},
 };
 

@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "HSIshraqRegular";
+  src: url(../public/assets/fonts/HSIshraqRegular.otf);
+}
 
 $color-primary: #555555;
 $color-secondary: #2f8a33;
@@ -12,9 +16,36 @@ $theme-colors: (
   @return map-get($theme-colors, $key);
 }
 
-* {
-  font-family: "Work Sans";
+*:lang(en) {
+  font-family: "Work Sans" !important;
 }
+*:lang(ar) {
+  font-family: "HSIshraqRegular" !important;
+}
+
+// ==========================================
+// Font color
+// ==========================================
+
+.fc-primary {
+  color: #555555;
+}
+.fc-secondary {
+  color: #2f8a33;
+}
+.fc-black {
+  color: #000000;
+}
+.fc-blue {
+  color: #3581ea;
+}
+.fc-white {
+  color: #ffffff;
+}
+.fc-gray {
+  color: #858585;
+}
+
 // ==========================================
 // Font size
 // ==========================================
@@ -36,6 +67,9 @@ $theme-colors: (
 }
 .fs-34 {
   font-size: 34px;
+  :lang(ar) {
+    font-size: 40px;
+  }
 }
 // ==========================================
 // Buttons

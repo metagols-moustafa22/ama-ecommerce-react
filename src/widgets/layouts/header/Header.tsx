@@ -10,10 +10,11 @@ import Button from "react-bootstrap/Button";
 import Select from "react-select";
 
 export const Header: React.FC = () => {
-  const {
-    t,
-    i18n: { language },
-  } = useTranslation();
+  const { t } = useTranslation();
+  // const {
+  //   t,
+  //   i18n: { language },
+  // } = useTranslation();
 
   const languages = [
     { value: "EN", label: "English" },
@@ -70,31 +71,31 @@ export const Header: React.FC = () => {
                 <div className="header-top">
                   <Nav.Link>
                     <Button variant="light" className="header-btn-light">
-                      About Us
+                      {t(enKey.header_about_us)}
                     </Button>
                   </Nav.Link>
                   <span className="dot">.</span>
                   <Nav.Link>
                     <Button variant="light" className="header-btn-light">
-                      Affliate Program
+                      {t(enKey.header_affliate_program)}
                     </Button>
                   </Nav.Link>
                   <span className="dot">.</span>
                   <Nav.Link>
                     <Button variant="light" className="header-btn-light">
-                      Offers
+                      {t(enKey.header_offfer)}
                     </Button>
                   </Nav.Link>
                   <span className="dot">.</span>
                   <Nav.Link>
                     <Button variant="light" className="header-btn-light">
-                      Contact Us
+                      {t(enKey.header_contact_us)}
                     </Button>
                   </Nav.Link>
                   <span className="dot">.</span>
                   <Nav.Link>
                     <Button variant="light" className="header-btn-light">
-                      Frequently asked questions
+                      {t(enKey.header_frequently_asked_question)}{" "}
                     </Button>
                   </Nav.Link>
                 </div>
@@ -103,7 +104,7 @@ export const Header: React.FC = () => {
                     <input className="search-input" placeholder="What are you looking for?" type="text" />
                     <Dropdown className="search-category-dropdown">
                       <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                        Category
+                        {t(enKey.btn_Category)}
                       </Dropdown.Toggle>
                       <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -114,7 +115,7 @@ export const Header: React.FC = () => {
                   </div>
 
                   <Button className="btn-search" variant="success">
-                    search
+                    {t(enKey.btn_search)}
                   </Button>
                 </div>
               </div>

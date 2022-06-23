@@ -32,9 +32,7 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        {/* <I18nextProvider i18n={i18n}> */}
         <ProviderLayout />
-        {/* </I18nextProvider> */}
       </Provider>
     </div>
   );

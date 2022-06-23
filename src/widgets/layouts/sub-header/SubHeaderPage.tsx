@@ -2,8 +2,11 @@ import React from "react";
 import "./SubHeaderStyles.scss";
 import { Row, Col, Dropdown } from "react-bootstrap";
 import "../../../index.scss";
+import { useTranslation } from "react-i18next";
+import { enKey } from "../../../utils/languages/en";
 
 export const SubHeaderPage: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div id="SubHeader">
       <Row>
@@ -12,7 +15,7 @@ export const SubHeaderPage: React.FC = () => {
             <Dropdown.Toggle variant="transparent" id="dropdown-basic">
               <span className="d-flex justify-content-center align-items-center fs-14" style={{ gap: "8px" }}>
                 <img src="/assets/icons/category.svg" alt="" />
-                Category
+                {t(enKey.btn_Category)}
               </span>
             </Dropdown.Toggle>
             <Dropdown.Menu>
@@ -25,12 +28,12 @@ export const SubHeaderPage: React.FC = () => {
         <Col lg={6}>
           <div className="sub-header-contents d-flex justify-content-center align-items-center" style={{ gap: "15px" }}>
             <a href="" className="fs-14">
-              Home
+              {t(enKey.btn_home)}
             </a>
             <Dropdown className="d-flex justify-content-end new-product-btn">
               <Dropdown.Toggle variant="transparent" id="dropdown-basic">
                 <span className="d-flex justify-content-center align-items-center fs-14" style={{ gap: "8px" }}>
-                  New Product
+                  {t(enKey.btn_New_Product)}
                 </span>
               </Dropdown.Toggle>
               <Dropdown.Menu>
@@ -41,9 +44,9 @@ export const SubHeaderPage: React.FC = () => {
             </Dropdown>
             <div className="d-flex" style={{ gap: "5px" }}>
               <a href="" className="fs-14">
-                On Sale
+                {t(enKey.btn_On_Sale)}
               </a>
-              <div className="hot fs-12">hot</div>
+              <div className="hot fs-12">{t(enKey.btn_Hot)}</div>
             </div>
           </div>
         </Col>
@@ -55,13 +58,13 @@ export const SubHeaderPage: React.FC = () => {
             <div className="d-flex justify-content-between align-items-center" style={{ gap: "5px" }}>
               <img src="/assets/icons/truck.svg" alt="" />
               <a href="" className="fs-14">
-                Track Your Order
+                {t(enKey.sub_header_track_your_order)}
               </a>
             </div>
             <div className="d-flex justify-content-between align-items-center" style={{ gap: "5px" }}>
               <img src="/assets/icons/user.svg" alt="" />
               <a href="" className="fs-14">
-                Sign In/Register
+                {t(enKey.sub_header_signin_register)}
               </a>
             </div>
           </div>

@@ -1,47 +1,37 @@
 #Home {
   margin-top: 24px;
-  .test {
-    width: 270px;
-    height: 564px;
-    border-radius: 8px;
-    background-color: red;
-    overflow: hidden;
+  #ShopByCategory,
+  #NewArrival,
+  #landScapeCards,
+  #exporeMore {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+  #exporeMore {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    z-index: 0;
     img {
+      z-index: -1;
+      position: absolute;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .exploremore-contents {
+      padding: 211px;
       height: 100%;
     }
-  }
-  .test2 {
-    width: 858px;
-    height: 367px;
-    border-radius: 8px;
-    background-color: red;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .test3 {
-    width: 194px;
-    height: 172px;
-    border-radius: 8px;
-    background-color: red;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .test4 {
-    width: 270px;
-    height: 172px;
-    border-radius: 8px;
-    background-color: red;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
+    .offer-price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 8px 16px;
+      // width: 118px;
+      height: 40px;
+      background: #ffe923;
+      border-radius: 8px;
     }
   }
 }
